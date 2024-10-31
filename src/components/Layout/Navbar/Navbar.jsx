@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav className='sticky top-0 left-0 w-full z-[999] bg-[#6B3CC9]'>
-        <div className="mx-auto relative py-[16px] md:py-0 px-[20px] md:flex justify-between items-center md:pt-0">
+        <div className="mx-auto relative py-[16px] md:py-0 px-[20px] md:flex justify-between items-center md:pt-0 xl:max-w-[1440px]">
             <div className="flex items-center justify-between">
                 <div className="max-w-[225px] md:max-w-[155px] cursor-pointer max-h-[36px]">
                     <Link href="/" className="block" title={"AT Digital Logo"}>

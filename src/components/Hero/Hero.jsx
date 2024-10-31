@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 
 function Hero() {
   return (
-    <div className='mb-[50px] flex flex-col lg:relative'>
+    <div className='mb-[50px] flex flex-col lg:relative xl:max-w-[1540px] xl:mx-auto'>
         <div className=''>
             <Image
                 src={HeroBg} 

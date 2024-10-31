@@ -12,7 +12,7 @@ const lato = Lato({
 function Footer() {
   return (
     <footer className='w-full bg-[#6B3CC9] px-[40px] pt-[40px] text-[14px] text-white'>
-        <div>
+        <div className='xl:max-w-[1440px] xl:mx-auto'>
             {/*  */}
             <div className='flex flex-col gap-5 lg:flex-row mb-10'>
                 <div className='mb-5'>
