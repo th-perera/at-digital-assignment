@@ -1,15 +1,16 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import { Inter, Poppins } from 'next/font/google';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  weight: ['400', '500', '700'], 
+  subsets: ['latin'], 
+  variable: "--inter",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const poppins = Poppins({
+  weight: ['400', '500', '600'], 
+  subsets: ['latin'], 
+  variable: "--poppins",
 });
 
 export const metadata = {
@@ -19,10 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${inter.variable} ${poppins.variable} antialiased`}>
+      <body>
         {children}
       </body>
     </html>
